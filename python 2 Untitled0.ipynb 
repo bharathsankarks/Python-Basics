@@ -1,0 +1,676 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMeBDF/WKK9UqKry2CEA668",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/bharathsankarks/Python-Basics/blob/main/python%202%20Untitled0.ipynb%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "To1PiZAzEi1S",
+        "outputId": "44c8e5d8-8554-45a2-c6ad-100460e844c1"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n"
+          ]
+        }
+      ],
+      "source": [
+        "for bharath in range (10):\n",
+        "  print(bharath)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x=0\n",
+        "y=0\n",
+        "for x in range (10):\n",
+        "  y=y+x\n",
+        "  print(y)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "0blDfonmFpHp",
+        "outputId": "77d84a1a-390f-41d7-d03e-c3c266302f87"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "3\n",
+            "6\n",
+            "10\n",
+            "15\n",
+            "21\n",
+            "28\n",
+            "36\n",
+            "45\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x=1\n",
+        "y=1\n",
+        "for x in range (1,10):\n",
+        "  y=y*x\n",
+        "  print(y)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "360ai8JeJvKc",
+        "outputId": "2fe09ed5-896f-4e0f-a290-e7abaf013642"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "6\n",
+            "24\n",
+            "120\n",
+            "720\n",
+            "5040\n",
+            "40320\n",
+            "362880\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x=0\n",
+        "y=0\n",
+        "for x in range (100):\n",
+        "  y=y+x\n",
+        "  print(y)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "oR0YA7tXLyN3",
+        "outputId": "8a7e69d7-1063-4952-db69-30f816d5c2e9"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "3\n",
+            "6\n",
+            "10\n",
+            "15\n",
+            "21\n",
+            "28\n",
+            "36\n",
+            "45\n",
+            "55\n",
+            "66\n",
+            "78\n",
+            "91\n",
+            "105\n",
+            "120\n",
+            "136\n",
+            "153\n",
+            "171\n",
+            "190\n",
+            "210\n",
+            "231\n",
+            "253\n",
+            "276\n",
+            "300\n",
+            "325\n",
+            "351\n",
+            "378\n",
+            "406\n",
+            "435\n",
+            "465\n",
+            "496\n",
+            "528\n",
+            "561\n",
+            "595\n",
+            "630\n",
+            "666\n",
+            "703\n",
+            "741\n",
+            "780\n",
+            "820\n",
+            "861\n",
+            "903\n",
+            "946\n",
+            "990\n",
+            "1035\n",
+            "1081\n",
+            "1128\n",
+            "1176\n",
+            "1225\n",
+            "1275\n",
+            "1326\n",
+            "1378\n",
+            "1431\n",
+            "1485\n",
+            "1540\n",
+            "1596\n",
+            "1653\n",
+            "1711\n",
+            "1770\n",
+            "1830\n",
+            "1891\n",
+            "1953\n",
+            "2016\n",
+            "2080\n",
+            "2145\n",
+            "2211\n",
+            "2278\n",
+            "2346\n",
+            "2415\n",
+            "2485\n",
+            "2556\n",
+            "2628\n",
+            "2701\n",
+            "2775\n",
+            "2850\n",
+            "2926\n",
+            "3003\n",
+            "3081\n",
+            "3160\n",
+            "3240\n",
+            "3321\n",
+            "3403\n",
+            "3486\n",
+            "3570\n",
+            "3655\n",
+            "3741\n",
+            "3828\n",
+            "3916\n",
+            "4005\n",
+            "4095\n",
+            "4186\n",
+            "4278\n",
+            "4371\n",
+            "4465\n",
+            "4560\n",
+            "4656\n",
+            "4753\n",
+            "4851\n",
+            "4950\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "10%2"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "9-O_E2siMi60",
+        "outputId": "4caa0526-7779-41de-ab41-eb98a468ca08"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "0"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 11
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "11%2"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "1WyA2t4OMw-c",
+        "outputId": "49eb4dfb-3050-4235-abd1-3ea4bb057987"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "1"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "10%2"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "RDjj20XAOoce",
+        "outputId": "e974178b-1b34-45f5-ae1d-baaa00cb7771"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "0"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 13
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "13%2"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "pSK-FLWJOqDl",
+        "outputId": "a9012fac-ee74-4ea0-f726-99db05f55c48"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "1"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 14
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "14%2"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "Zot1D-eSOrr1",
+        "outputId": "58805d81-fc76-4d0d-c1a8-e6fb82711973"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "0"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 15
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 33\n",
+        "b = 200\n",
+        "if b > a:\n",
+        "  print(\"b is greater than a\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "2vG8c30KOtg0",
+        "outputId": "70f587b3-72a7-4eb7-a483-18e4c9f400c8"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "b is greater than a\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 33\n",
+        "b = 200\n",
+        "if b > a:\n",
+        "  print(\"b is greater than a \") "
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 0
+        },
+        "id": "5UcDTSywQR_o",
+        "outputId": "7955df1f-523f-469f-aa15-df5330beb06b"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "b is greater than a \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 33\n",
+        "b = 33\n",
+        "if b > a:\n",
+        "  print(\"b is greater than a \")\n",
+        "elif a == b:\n",
+        "    print(\"a and b are equal\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dwtoqJWZQt-m",
+        "outputId": "491047b4-59d5-405e-deff-9c1ad6bdb074"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "a and b are equal\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 200\n",
+        "b = 33\n",
+        "if b > a:\n",
+        "  print(\"b is greater than a \")\n",
+        "elif a == b:\n",
+        "  print(\"a and b are equal\")\n",
+        "else:\n",
+        "  print(\"a is greater than b \")\n",
+        "  "
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zt2g1KgoSIb-",
+        "outputId": "81d165bd-94a3-4410-dfa0-313a4490d9c0"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "a is greater than b \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 200\n",
+        "b = 33\n",
+        "if b > a:\n",
+        "  print(\"b is greater than a \")\n",
+        "else:\n",
+        "  print(\"b is not greater a \")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hFFw2kk5TAdw",
+        "outputId": "edcbba5c-62cc-446f-cdc8-95d2709dbc0c"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "b is not greater a \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if a > b: print (\"a is greater than b \")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_GQculZqTzdv",
+        "outputId": "4d52bda5-7124-4c51-c99f-f9a9694aac6c"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "a is greater than b \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "y=0\n",
+        "x=0\n",
+        "for x in range (100):\n",
+        " if x%2==0:\n",
+        "   y=y+x\n",
+        "   print(y)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "P-bgxXRib0aS",
+        "outputId": "e1d480a5-02f7-451b-d73a-56650eee115b"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "2\n",
+            "6\n",
+            "12\n",
+            "20\n",
+            "30\n",
+            "42\n",
+            "56\n",
+            "72\n",
+            "90\n",
+            "110\n",
+            "132\n",
+            "156\n",
+            "182\n",
+            "210\n",
+            "240\n",
+            "272\n",
+            "306\n",
+            "342\n",
+            "380\n",
+            "420\n",
+            "462\n",
+            "506\n",
+            "552\n",
+            "600\n",
+            "650\n",
+            "702\n",
+            "756\n",
+            "812\n",
+            "870\n",
+            "930\n",
+            "992\n",
+            "1056\n",
+            "1122\n",
+            "1190\n",
+            "1260\n",
+            "1332\n",
+            "1406\n",
+            "1482\n",
+            "1560\n",
+            "1640\n",
+            "1722\n",
+            "1806\n",
+            "1892\n",
+            "1980\n",
+            "2070\n",
+            "2162\n",
+            "2256\n",
+            "2352\n",
+            "2450\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x=[1,5,3,8,5,9,3,9,8,5]\n",
+        "for y in x:\n",
+        "  if y%2==0:\n",
+        "   print(y)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lUJ6ahukckjd",
+        "outputId": "bf28d4f0-edd6-4270-9d94-ef943225fa08"
+      },
+      "execution_count": 40,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "8\n",
+            "8\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "HJhS0pA6eczS"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
